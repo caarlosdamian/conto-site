@@ -1,7 +1,10 @@
-import { FormattedMessage } from 'react-intl';
+import { Hero, Manage } from '../../sections';
 
 export const Home = () => {
-  return <div className=" mx-auto container px-4">
-    <FormattedMessage id='home_title' />
-  </div>;
+  return (
+    <>
+      <Hero />
+      <Manage />
+    </>
+  );
 };
