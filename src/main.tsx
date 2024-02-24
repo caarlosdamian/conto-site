@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider } from 'react-router-dom';
 import { router } from './routes/router';
-import './index.css';
 import { IntlProvider } from 'react-intl';
 import { messages } from './translations';
+import './styles/index.css';
 
 const i18nConfig = {
   locale:
