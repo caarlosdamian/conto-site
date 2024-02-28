@@ -7,7 +7,13 @@ interface Props extends HTMLAttributes<HTMLButtonElement> {
   size?: 'sm' | 'md' | 'lg';
 }
 
-export const Button = ({ label, type, size = 'sm', ...props }: Props) => {
+export const Button = ({
+  label,
+  type,
+  size = 'sm',
+  className,
+  ...props
+}: Props) => {
   const typeStyles =
     type === 'primary'
       ? 'bg-conto-secondary text-conto-primary'
@@ -16,7 +22,7 @@ export const Button = ({ label, type, size = 'sm', ...props }: Props) => {
   return (
     <button
       {...props}
-      className={`font-medium text-base px-5 rounded-lg cursor-pointer hover:bg-opacity-90 ${typeStyles} ${sizeStyling}`}
+      className={`font-medium text-base px-5 rounded-lg cursor-pointer hover:bg-opacity-90 ${typeStyles} ${sizeStyling} ${className}`}
     >
       <FormattedMessage id={label} />
     </button>

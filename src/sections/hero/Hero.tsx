@@ -1,10 +1,11 @@
 import { FormattedMessage } from 'react-intl';
-import { hero } from '../../assets';
+import { hero, homePattern } from '../../assets';
 import { Section } from '../../components/shared/section/Section';
 
 export const Hero = () => {
   return (
-    <div className="base-container pt-[120px]">
+    <div className="base-container py-[120px] px-6">
+      <img src={homePattern} alt="homePattern" className='absolute left-0'/>
       <Section
         description="hero_description"
         title={

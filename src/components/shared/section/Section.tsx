@@ -25,14 +25,15 @@ export const Section = ({
 }: Props) => {
   const { formatMessage } = useIntl();
   const textStyling = theme === 'white' ? 'text-conto-black' : 'text-white';
+  const buttontype = theme === 'white' ? 'secondary' : 'primary';
   return (
     <div
-      className={`flex justify-between items-center ${
+      className={`flex justify-between items-center gap-16 ${
         reverse ? 'flex-row-reverse' : ''
       }`}
     >
-      <div className="flex flex-col gap-16">
-        <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-16 flex-1">
+        <div className={`flex flex-col ${size === 'xl' ? 'gap-16' : 'gap-6'}`}>
           <h1
             className={`${textStyling} ${
               size === 'xl' ? 'text-7xl' : 'text-[64px]'
@@ -45,17 +46,17 @@ export const Section = ({
           </p>
         </div>
         <Button
-          type={'primary'}
+          type={buttontype}
           label={ctaLabel}
           className="self-start"
           size="lg"
         />
       </div>
-      <div className="w-full h-full">
+      <div className="w-full h-full flex-1">
         <img
           src={photo}
           alt={alt}
-          className="block w-full h-full object-cover"
+          className="relative w-full h-full object-cover z-10"
         />
       </div>
     </div>

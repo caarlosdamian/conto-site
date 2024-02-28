@@ -2,25 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider } from 'react-router-dom';
 import { router } from './routes/router';
-import { IntlProvider } from 'react-intl';
-import { messages } from './translations';
+import { LanguageContextProvider } from './context/languageContext';
 import './styles/index.css';
 
-const i18nConfig = {
-  locale:
-    navigator.languages[0] !== 'en-US' && navigator.languages[0] !== 'es'
-      ? 'es'
-      : navigator.languages[0],
-};
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <IntlProvider
-      messages={messages[i18nConfig.locale]}
-      locale={i18nConfig.locale}
-      defaultLocale={i18nConfig.locale}
-    >
+    <LanguageContextProvider>
       <RouterProvider router={router} />
-    </IntlProvider>
+    </LanguageContextProvider>
   </React.StrictMode>
 );
