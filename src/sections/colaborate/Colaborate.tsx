@@ -4,7 +4,7 @@ import { colaboration } from '../../assets';
 import { UnderLabel } from '../../components/shared/underLabel/UnderLabel';
 export const Colaborate = () => {
   return (
-    <div className="bg-white w-screen py-[120px] px-6">
+    <div className="bg-white w-screen py-16 lg:py-[120px] px-6">
       <div className="base-container">
         <Section
           description="colaborate_description"

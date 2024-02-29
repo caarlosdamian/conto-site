@@ -36,7 +36,9 @@ export const Section = ({
         <div className={`flex flex-col ${size === 'xl' ? 'gap-16' : 'gap-6'}`}>
           <h1
             className={`${textStyling} ${
-              size === 'xl' ? 'text-4xl lg:text-7xl' : 'text-4xl lg:text-[64px] leading-normal'
+              size === 'xl'
+                ? 'text-4xl lg:text-7xl'
+                : 'text-4xl lg:text-[64px] leading-normal'
             }`}
           >
             {typeof title === 'string' ? formatMessage({ id: title }) : title}

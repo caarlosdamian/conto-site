@@ -4,7 +4,7 @@ import { Section } from '../../components/shared/section/Section';
 
 export const Hero = () => {
   return (
-    <div className="base-container py-[120px] px-6">
+    <div className="base-container py-8 lg:py-[120px] px-6">
       <img src={homePattern} alt="homePattern" className='absolute left-0'/>
       <Section
         description="hero_description"

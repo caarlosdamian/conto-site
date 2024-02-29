@@ -2,7 +2,7 @@ import { HTMLAttributes } from 'react';
 import { FormattedMessage } from 'react-intl';
 
 interface Props extends HTMLAttributes<HTMLButtonElement> {
-  type: 'primary' | 'secondary';
+  type: 'primary' | 'secondary' | 'third';
   label: string;
   size?: 'sm' | 'md' | 'lg';
 }
@@ -17,7 +17,7 @@ export const Button = ({
   const typeStyles =
     type === 'primary'
       ? 'bg-conto-secondary text-conto-primary'
-      : 'text-white bg-conto-skyBlue';
+      : type === 'secondary' ? 'text-white bg-conto-skyBlue' : 'text-white bg-conto-primary';
   const sizeStyling = size === 'lg' ? 'py-5' : size === 'md' ? 'py-3' : 'py-2';
   return (
     <button

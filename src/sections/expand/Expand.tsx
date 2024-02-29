@@ -5,7 +5,7 @@ import { expand } from '../../assets';
 
 export const Expand = () => {
   return (
-    <section className="base-container py-[120px] px-6" id="expand">
+    <section className="base-container py-16 lg:py-[120px] px-6" id="expand">
       <Section
         description="expand_description"
         title={
