@@ -9,7 +9,7 @@ export const UnderLabel = ({ id }: Props) => {
   return (
     <p className="relative">
       {formatMessage({ id })}
-      <img src={underline} alt="underline" className="absolute top-14" />
+      <img src={underline} alt="underline" className="absolute top-6 lg:top-14" />
     </p>
   );
 };

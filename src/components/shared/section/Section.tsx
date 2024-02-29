@@ -28,7 +28,7 @@ export const Section = ({
   const buttontype = theme === 'white' ? 'secondary' : 'primary';
   return (
     <div
-      className={`flex justify-between items-center gap-16 ${
+      className={`flex justify-between items-center flex-col lg:flex-row gap-16 ${
         reverse ? 'flex-row-reverse' : ''
       }`}
     >
@@ -36,12 +36,12 @@ export const Section = ({
         <div className={`flex flex-col ${size === 'xl' ? 'gap-16' : 'gap-6'}`}>
           <h1
             className={`${textStyling} ${
-              size === 'xl' ? 'text-7xl' : 'text-[64px]'
+              size === 'xl' ? 'text-4xl lg:text-7xl' : 'text-4xl lg:text-[64px] leading-normal'
             }`}
           >
             {typeof title === 'string' ? formatMessage({ id: title }) : title}
           </h1>
-          <p className={`text-lg ${textStyling}`}>
+          <p className={`text-base lg:text-lg ${textStyling}`}>
             {formatMessage({ id: description })}
           </p>
         </div>

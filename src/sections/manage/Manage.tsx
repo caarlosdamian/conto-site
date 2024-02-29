@@ -5,7 +5,7 @@ import { UnderLabel } from '../../components/shared/underLabel/UnderLabel';
 
 export const Manage = () => {
   return (
-    <div className="bg-white w-screen py-[120px]">
+    <div className="bg-white w-screen py-[120px] px-6">
       <img
         src={circlePattern}
         alt="circlePattern-manage"
