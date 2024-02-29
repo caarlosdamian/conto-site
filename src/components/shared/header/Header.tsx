@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { contoLogo, hamburger, mexico, usa } from '../../../assets';
 import { headerLinks } from '../../../constants';
 import { FormattedMessage, useIntl } from 'react-intl';
@@ -26,9 +25,9 @@ export const Header = () => {
             onClick={() => changeLocale(locale === 'es' ? 'en-US' : 'es')}
           />
           {headerLinks.map((link) => (
-            <Link key={link.id} to={link.path} className="text-conto-gray">
+            <a href={link.path} key={link.id} className="text-conto-gray">
               <FormattedMessage id={link.id} />
-            </Link>
+            </a>
           ))}
           <Button type="primary" label="header_button_login" />
         </div>

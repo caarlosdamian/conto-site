@@ -12,7 +12,8 @@ import mexico from './mexico.png';
 import teamTier from './teamTier.svg';
 import underline from './underline.svg';
 import usa from './usa.svg';
-import check from './check.svg'
+import check from './check.svg';
+import workPattern from './workPattern.svg';
 
 export {
   circlePattern,
@@ -30,4 +31,5 @@ export {
   teamTier,
   underline,
   usa,
+  workPattern,
 };

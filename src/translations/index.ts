@@ -56,6 +56,10 @@ export const messages = {
     plans_description:
       'Adapt your hospital maintenance strategy with our CMMS, designed for every need.',
     plans_cta: 'Request a demo',
+    work_title: 'Your work, in all the ',
+    work_underline_title: 'places',
+    work_description:
+      'Keep your maintenance operations at your fingertips, no matter where you are.',
   },
   [LOCALES.SPANISH]: {
     home_title: 'Bienvenido',
@@ -109,5 +113,9 @@ export const messages = {
     plans_description:
       'Adapta tu estrategia de mantenimiento hospitalario con nuestro CMMS, diseñado para cada necesidad.',
     plans_cta: 'Solicitar una demostración',
+    work_title: 'Tu trabajo, en todos los',
+    work_underline_title: 'lugares',
+    work_description:
+      'Mantén tus operaciones de mantenimiento al alcance de tu mano, sin importar dónde te encuentres.',
   },
 };
