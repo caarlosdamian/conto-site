@@ -1,6 +1,6 @@
 import { FormattedMessage } from 'react-intl';
 import { hero, homePattern } from '../../assets';
-import { Section } from '../../components/shared/section/Section';
+import { Section } from '../../components/';
 
 export const Hero = () => {
   return (

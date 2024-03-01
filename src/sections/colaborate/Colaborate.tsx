@@ -1,7 +1,7 @@
 import { FormattedMessage } from 'react-intl';
-import { Section } from '../../components/shared/section/Section';
+import { Section, UnderLabel } from '../../components/';
 import { colaboration } from '../../assets';
-import { UnderLabel } from '../../components/shared/underLabel/UnderLabel';
+
 export const Colaborate = () => {
   return (
     <div className="bg-white w-screen py-16 lg:py-[120px] px-6">

@@ -1,8 +1,6 @@
 import { Tier, plansInfo } from '../../constants';
-import { PlanCard } from '../../components/planCard/PlanCard';
-import { Slider } from '../../components/slider/Slider';
+import { Slider, UnderLabel, PlanCard } from '../../components/';
 import { useIntl } from 'react-intl';
-import { UnderLabel } from '../../components/shared/underLabel/UnderLabel';
 
 export const Plans = () => {
   const { formatMessage } = useIntl();

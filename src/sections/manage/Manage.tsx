@@ -1,7 +1,6 @@
 import { FormattedMessage } from 'react-intl';
-import { Section } from '../../components/shared/section/Section';
+import { Section, UnderLabel } from '../../components/';
 import { circlePattern, manage } from '../../assets';
-import { UnderLabel } from '../../components/shared/underLabel/UnderLabel';
 
 export const Manage = () => {
   return (
@@ -18,7 +17,7 @@ export const Manage = () => {
           title={
             <>
               <FormattedMessage id="manage_title" />
-              <UnderLabel id='manage_underline_subtitle' />
+              <UnderLabel id="manage_underline_subtitle" />
             </>
           }
           photo={manage}

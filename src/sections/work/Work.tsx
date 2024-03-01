@@ -1,6 +1,6 @@
 import { useIntl } from 'react-intl';
 import { workPattern } from '../../assets';
-import { UnderLabel } from '../../components/shared/underLabel/UnderLabel';
+import { UnderLabel } from '../../components';
 
 export const Work = () => {
   const { formatMessage } = useIntl();

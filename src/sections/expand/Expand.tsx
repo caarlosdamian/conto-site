@@ -1,6 +1,5 @@
-import { Section } from '../../components/shared/section/Section';
+import { Section, UnderLabel } from '../../components/';
 import { FormattedMessage } from 'react-intl';
-import { UnderLabel } from '../../components/shared/underLabel/UnderLabel';
 import { expand } from '../../assets';
 
 export const Expand = () => {
