@@ -69,7 +69,11 @@ export const messages = {
     testimonials_three_testimonial:
       'This CMMS is intuitive and powerful, providing us with all the tools we need to manage maintenance requests, work orders, and inventory with ease. It has significantly improved our operational efficiency.',
     testimonials_three_position: 'Project Manager',
-    testimonials_title: 'See what our trusted users Say'
+    testimonials_title: 'See what our trusted users Say',
+    footer_title:
+      'Conto was developed with the new ways we live and work in mind.',
+    footer_rights: 'All rights reserved.',
+    footer_contact: 'CONTACT US',
   },
   [LOCALES.SPANISH]: {
     home_title: 'Bienvenido',
@@ -136,6 +140,10 @@ export const messages = {
     testimonials_three_testimonial:
       'Este CMMS es intuitivo y potente, proporcionándonos todas las herramientas que necesitamos para gestionar solicitudes de mantenimiento, órdenes de trabajo e inventario con facilidad. Ha mejorado significativamente nuestra eficiencia operativa.',
     testimonials_three_position: 'Gerente de Proyecto',
-    testimonials_title: 'Mira lo que dicen nuestros usuarios de confianza'
+    testimonials_title: 'Mira lo que dicen nuestros usuarios de confianza',
+    footer_title:
+      'Conto fue desarrollado pensando en los nuevos modos en que vivimos y trabajamos.',
+    footer_rights: 'Todos los derechos reservados.',
+    footer_contact: 'CONTÁCTANOS',
   },
 };

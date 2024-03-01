@@ -1,6 +1,7 @@
 import { Hero, Manage } from '../../sections';
 import { Colaborate } from '../../sections/colaborate/Colaborate';
 import { Expand } from '../../sections/expand/Expand';
+import { Footer } from '../../sections/footer/Footer';
 import { Plans } from '../../sections/plans/Plans';
 import { Testimonials } from '../../sections/testimonials/Testimonials';
 import { Work } from '../../sections/work/Work';
@@ -15,6 +16,7 @@ export const Home = () => {
       <Plans />
       <Work />
       <Testimonials />
+      <Footer />
     </>
   );
 };
