@@ -60,6 +60,16 @@ export const messages = {
     work_underline_title: 'places',
     work_description:
       'Keep your maintenance operations at your fingertips, no matter where you are.',
+    testimonials_one_testimonial:
+      'The predictive maintenance features have been a game-changer for our facility, reducing downtime and extending the life of our critical equipment. The user-friendly interface made adoption easy for our team.',
+    testimonials_one_position: 'Chief Technology Officer',
+    testimonials_two_position: 'Director of Operations',
+    testimonials_two_testimonial:
+      'Adopting this CMMS has allowed us to effectively reduce maintenance costs and improve equipment reliability. The support team has been fantastic, helping us customize the software to fit our unique needs.',
+    testimonials_three_testimonial:
+      'This CMMS is intuitive and powerful, providing us with all the tools we need to manage maintenance requests, work orders, and inventory with ease. It has significantly improved our operational efficiency.',
+    testimonials_three_position: 'Project Manager',
+    testimonials_title: 'See what our trusted users Say'
   },
   [LOCALES.SPANISH]: {
     home_title: 'Bienvenido',
@@ -117,5 +127,15 @@ export const messages = {
     work_underline_title: 'lugares',
     work_description:
       'Mantén tus operaciones de mantenimiento al alcance de tu mano, sin importar dónde te encuentres.',
+    testimonials_one_testimonial:
+      'Las funciones de mantenimiento predictivo han sido un cambio radical para nuestras instalaciones, reduciendo el tiempo de inactividad y extendiendo la vida útil de nuestro equipo crítico. La interfaz amigable al usuario facilitó la adopción por parte de nuestro equipo.',
+    testimonials_one_position: 'Director de Tecnología',
+    testimonials_two_position: 'Director de Operaciones',
+    testimonials_two_testimonial:
+      'Adoptar este CMMS nos ha permitido reducir efectivamente los costos de mantenimiento y mejorar la fiabilidad del equipo. El equipo de soporte ha sido fantástico, ayudándonos a personalizar el software para adaptarse a nuestras necesidades únicas.',
+    testimonials_three_testimonial:
+      'Este CMMS es intuitivo y potente, proporcionándonos todas las herramientas que necesitamos para gestionar solicitudes de mantenimiento, órdenes de trabajo e inventario con facilidad. Ha mejorado significativamente nuestra eficiencia operativa.',
+    testimonials_three_position: 'Gerente de Proyecto',
+    testimonials_title: 'Mira lo que dicen nuestros usuarios de confianza'
   },
 };

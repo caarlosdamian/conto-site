@@ -20,7 +20,7 @@ export const Section = ({
   title,
   ctaLabel,
   size,
-  reverse,
+  reverse ,
   theme,
 }: Props) => {
   const { formatMessage } = useIntl();
@@ -28,9 +28,7 @@ export const Section = ({
   const buttontype = theme === 'white' ? 'secondary' : 'primary';
   return (
     <div
-      className={`flex justify-between items-center flex-col lg:flex-row gap-16 ${
-        reverse ? 'flex-row-reverse' : ''
-      }`}
+      className={`flex justify-between items-center flex-col lg:flex-row gap-16 ${reverse ? 'lg:!flex-row-reverse' : ''}`}
     >
       <div className="flex flex-col gap-16 flex-1">
         <div className={`flex flex-col ${size === 'xl' ? 'gap-16' : 'gap-6'}`}>

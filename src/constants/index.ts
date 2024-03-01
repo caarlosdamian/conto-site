@@ -11,6 +11,16 @@ export type Tier = {
   backgroundColor: string;
 };
 
+export type Testimonial = {
+  testimonial: string;
+  author: string;
+  stars: number;
+  featured: boolean;
+  position: string;
+  company: string;
+  img: string;
+};
+
 export const headerLinks = [
   {
     id: 'header_plans',
@@ -68,5 +78,36 @@ export const plansInfo: Tier[] = [
     imageUrl: enterpriceTier,
     imageAlt: 'plans_tier_imgalt_enterprise',
     backgroundColor: '#2454B0',
+  },
+];
+
+export const testimonialInfo: Testimonial[] = [
+  {
+    testimonial: 'testimonials_one_testimonial',
+    author: 'Samantha Lee',
+    stars: 4,
+    featured: false,
+    position: 'testimonials_one_position',
+    company: 'GreenTech Solutions',
+    img: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  },
+  {
+    testimonial: 'testimonials_two_testimonial',
+    author: 'Raj Patel',
+    stars: 5,
+    featured: true,
+    position: 'testimonials_two_position',
+    company: 'Dynamic Logistics',
+    img: 'https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+   
+  },
+  {
+    testimonial: 'testimonials_three_testimonial',
+    author: 'Maria Gomez',
+    stars: 5,
+    featured: false,
+    position: 'testimonials_three_position',
+    company: 'Creative Designs Ltd.',
+    img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
 ];

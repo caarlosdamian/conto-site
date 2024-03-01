@@ -14,6 +14,8 @@ import underline from './underline.svg';
 import usa from './usa.svg';
 import check from './check.svg';
 import workPattern from './workPattern.svg';
+import quote from './quote.svg';
+import start from './star.svg';
 
 export {
   circlePattern,
@@ -32,4 +34,6 @@ export {
   underline,
   usa,
   workPattern,
+  quote,
+  start
 };
