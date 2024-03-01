@@ -1,4 +1,4 @@
-import { plansInfo } from '../../constants';
+import { Tier, plansInfo } from '../../constants';
 import { PlanCard } from '../../components/planCard/PlanCard';
 import { Slider } from '../../components/slider/Slider';
 import { useIntl } from 'react-intl';
@@ -7,7 +7,7 @@ import { UnderLabel } from '../../components/shared/underLabel/UnderLabel';
 export const Plans = () => {
   const { formatMessage } = useIntl();
   return (
-    <section className="bg-white w-screen py-16  lg:py-[120px] px-6" id='plans'>
+    <section className="bg-white w-screen py-16  lg:py-[120px] px-6" id="plans">
       <div className="flex justify-center flex-col gap-6 items-center mb-8 lg:mb-12">
         <h1 className="text-4xl lg:text-7xl flex items-center gap-1 lg:gap-3">
           {formatMessage({ id: 'plans_title' })}
@@ -24,7 +24,9 @@ export const Plans = () => {
           ))}
         </div>
         <div className="block lg:hidden">
-          <Slider slides={plansInfo} />
+          <Slider slides={plansInfo}>
+            {(item) => <PlanCard item={item as Tier} />}
+          </Slider>
         </div>
       </div>
     </section>

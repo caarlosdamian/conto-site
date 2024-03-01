@@ -1,12 +1,11 @@
-import { useCallback, useEffect, useState } from 'react';
-import { PlanCard } from '../planCard/PlanCard';
-import { Tier } from '../../constants';
+import React, { useCallback, useEffect, useState } from 'react';
 
 interface Props {
   slides: unknown[];
+  children: (item: unknown) => React.ReactNode;
 }
 
-export const Slider = ({ slides }: Props) => {
+export const Slider = ({ slides, children }: Props) => {
   const [actualPosition, setActualPosition] = useState(0);
   const gotoNext = useCallback(() => {
     if (actualPosition === slides.length - 1) {
@@ -31,7 +30,7 @@ export const Slider = ({ slides }: Props) => {
   };
   return (
     <div className="flex flex-col gap-16">
-      <PlanCard item={slides[actualPosition] as Tier} />
+      {children && children(slides[actualPosition])}
       <div className="flex items-center gap-2 justify-center">
         {slides.map((_, index) => (
           <div
