@@ -16,9 +16,11 @@ import check from './check.svg';
 import workPattern from './workPattern.svg';
 import quote from './quote.svg';
 import start from './star.svg';
+import close from './close.svg';
 
 export {
   circlePattern,
+  close,
   check,
   colaboration,
   contoLogo,
@@ -35,5 +37,5 @@ export {
   usa,
   workPattern,
   quote,
-  start
+  start,
 };
