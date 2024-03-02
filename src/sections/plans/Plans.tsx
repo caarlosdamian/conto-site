@@ -22,7 +22,7 @@ export const Plans = () => {
           ))}
         </div>
         <div className="block lg:hidden">
-          <Slider slides={plansInfo}>
+          <Slider slides={plansInfo} notMoveOnSelection>
             {(item) => <PlanCard item={item as Tier} />}
           </Slider>
         </div>

@@ -1,12 +1,18 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 
 interface Props {
   slides: unknown[];
   children: (item: unknown) => React.ReactNode;
+  notMoveOnSelection?: boolean;
 }
 
-export const Slider = ({ slides, children }: Props) => {
+export const Slider = ({
+  slides,
+  children,
+  notMoveOnSelection = false,
+}: Props) => {
   const [actualPosition, setActualPosition] = useState(0);
+  const isCliked = useRef(false);
   const gotoNext = useCallback(() => {
     if (actualPosition === slides.length - 1) {
       setActualPosition(0);
@@ -16,17 +22,22 @@ export const Slider = ({ slides, children }: Props) => {
   }, [actualPosition, slides.length]);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      gotoNext();
-    }, 4000);
+    if (!isCliked.current) {
+      const interval = setInterval(() => {
+        gotoNext();
+      }, 4000);
 
-    return () => {
-      clearInterval(interval);
-    };
+      return () => {
+        clearInterval(interval);
+      };
+    }
   }, [gotoNext]);
 
   const goToSelection = (id: number) => {
     setActualPosition(id);
+    if (notMoveOnSelection) {
+      isCliked.current = true;
+    }
   };
   return (
     <div className="flex flex-col gap-16">
